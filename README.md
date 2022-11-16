@@ -9,10 +9,10 @@
   <a href="mailto:fahril16093@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-22272E?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge"/>
   </a>
-  <a href="[your-youtube-URL](https://discord.com/users/352744397307117568)">
+  <a href="https://discord.com/users/352744397307117568">
     <img src="https://img.shields.io/badge/-Discord-22272E?style=for-the-badge&logo=discord&logoColor=white" alt="Discord Badge"/>
   </a>
-  <a href="[your-twitter-URL](https://web.facebook.com/fahril005)">
+  <a href="https://web.facebook.com/fahril005">
     <img src="https://img.shields.io/badge/Facebook-22272E.svg?style=for-the-badge&logo=Facebook&logoColor=white" alt="Facebook Badge"/>
   </a>
 </div>
