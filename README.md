@@ -16,16 +16,5 @@
     <img src="https://img.shields.io/badge/Facebook-22272E.svg?style=for-the-badge&logo=Facebook&logoColor=white" alt="Facebook Badge"/>
   </a>
 </div>
-<div id="counter" align="center">
-  <img src="https://komarev.com/ghpvc/?username=frostdev03&style=flat-square&color=blue" alt=""/>
- </div>
- 
- 
-<!-- [![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=fahrilmth&theme=dark&background=1A1B27)](https://git.io/streak-stats)
- -->
-<!-- [![Gmail](https://img.shields.io/badge/Gmail-22272E?style=for-the-badge&logo=gmail&logoColor=white)](mailto:fahril16093@gmail.com)
-[![Discord](https://img.shields.io/badge/-Discord-22272E?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/352744397307117568)
-[![Facebook](https://img.shields.io/badge/Facebook-22272E.svg?style=for-the-badge&logo=Facebook&logoColor=white)](https://web.facebook.com/fahril005)
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-22272E?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6289601485849) -->
 
 
