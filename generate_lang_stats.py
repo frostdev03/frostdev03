@@ -9,6 +9,7 @@ def fetch_repos(username):
     repos = []
     page = 1
     while True:
+        print(f"Fetching page {page} of repos...")
         url = f"https://api.github.com/users/{username}/repos?per_page=100&page={page}"
         response = requests.get(url, headers={"Authorization": f"token {TOKEN}"})
         data = response.json()
@@ -16,7 +17,9 @@ def fetch_repos(username):
             break
         repos.extend(data)
         page += 1
+    print(f"Fetched {len(repos)} repos.")
     return repos
+
 
 def fetch_languages(repo):
     url = repo["languages_url"]
@@ -48,10 +51,17 @@ def update_readme():
         f.write("![Language Stats](lang_stats.png)\n")
 
 def main():
+    print("Starting analysis...")
     repos = fetch_repos(USERNAME)
+    if not repos:
+        print("No repositories found or API failed.")
+        return
     lang_totals = aggregate_languages(repos)
+    print(f"Language data: {lang_totals}")
     plot_languages(lang_totals)
     update_readme()
+    print("Done!")
+
 
 if __name__ == "__main__":
     main()
