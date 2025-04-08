@@ -5,13 +5,16 @@ import os
 USERNAME = "frostdev03"
 TOKEN = os.getenv("GH_TOKEN")  # Save a GitHub token in your repo secrets
 
-def fetch_repos(username):
+def fetch_repos():
     repos = []
     page = 1
     while True:
-        print(f"Fetching page {page} of repos...")
-        url = f"https://api.github.com/users/{username}/repos?per_page=100&page={page}"
+        print(f"Fetching page {page} of your repos...")
+        url = f"https://api.github.com/user/repos?per_page=100&page={page}"
         response = requests.get(url, headers={"Authorization": f"token {TOKEN}"})
+        if response.status_code != 200:
+            print(f"GitHub API error: {response.status_code}, {response.text}")
+            break
         data = response.json()
         if not data:
             break
@@ -19,7 +22,6 @@ def fetch_repos(username):
         page += 1
     print(f"Fetched {len(repos)} repos.")
     return repos
-
 
 def fetch_languages(repo):
     url = repo["languages_url"]
@@ -52,7 +54,8 @@ def update_readme():
 
 def main():
     print("Starting analysis...")
-    repos = fetch_repos(USERNAME)
+    repos = fetch_repos()
+    repos = fetch_repos()
     if not repos:
         print("No repositories found or API failed.")
         return
